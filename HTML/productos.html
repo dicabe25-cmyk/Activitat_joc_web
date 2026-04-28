@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Catàleg | Dídac TECH</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dídac<span>TECH</span></div>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="productos.html" class="active">Catàleg</a></li>
+                <li><a href="contacto.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="card">
+            <img src="https://d1q3zw97enxzq2.cloudfront.net/images/GeForce-RTX4090-3QTR-Front-Right.width-1000.format-webp.webp" alt="RTX 4090">
+            <div class="card-content">
+                <h3>NVIDIA RTX 4090</h3>
+                <p class="price">1.950,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61aQ0AzVAML._AC_UF894,1000_QL80_.jpg" alt="i9-14900K">
+            <div class="card-content">
+                <h3>Intel Core i9-14900K</h3>
+                <p class="price">589,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://d1q3zw97enxzq2.cloudfront.net/images/7800X3D_Retail_Box.width-540.format-webp.webp" alt="Ryzen 7 7800X3D">
+            <div class="card-content">
+                <h3>AMD Ryzen 7 7800X3D</h3>
+                <p class="price">399,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dlcdnwebimgs.asus.com/files/media/29C004F7-7B1F-4EBF-9099-7168B520A0EE/v1/img/kv/pd.png" alt="ROG Maximus">
+            <div class="card-content">
+                <h3>ASUS ROG Maximus Z790</h3>
+                <p class="price">645,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2X5200C38/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp" alt="Dominator RAM">
+            <div class="card-content">
+                <h3>Corsair Dominator 64GB DDR5</h3>
+                <p class="price">285,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_102342338/fee_786_587_png" alt="Samsung 990 Pro">
+            <div class="card-content">
+                <h3>Samsung 990 Pro 2TB</h3>
+                <p class="price">175,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://nzxt.com/cdn/shop/files/OFMPon_b28785ee-2518-4435-b1eb-4f48155e193d.png?v=1762528051" alt="NZXT Kraken">
+            <div class="card-content">
+                <h3>NZXT Kraken Elite 360</h3>
+                <p class="price">299,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.corsair.com/image/upload/f_auto,q_auto/content/CP-9020094-EU-RMx-1000-01.png" alt="PSU Corsair">
+            <div class="card-content">
+                <h3>Corsair RM1000x 80+ Gold</h3>
+                <p class="price">189,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10819902/1840-lian-li-o11d-evo-rgb-cristal-templado-usb-30-negra.jpg" alt="Lian Li">
+            <div class="card-content">
+                <h3>Lian Li O11 Dynamic EVO</h3>
+                <p class="price">165,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71ShvNTzRRL.jpg" alt="Monitor OLED">
+            <div class="card-content">
+                <h3>LG UltraGear OLED 27</h3>
+                <p class="price">899,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71ShvNTzRRL.jpg" alt="Logitech G Pro">
+            <div class="card-content">
+                <h3>Logitech G Pro X 2 Lightspeed</h3>
+                <p class="price">249,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://intl.presonus.com/cdn/shop/files/2777500121_pre_mon_frt_1_nr.png?v=1764001098&width=1920" alt="Presonus">
+            <div class="card-content">
+                <h3>Presonus Eris 3.5</h3>
+                <p class="price">110,00€</p>
+                <label>
+                    <input type="checkbox" class="comp-check" style="display:none" onchange="actualitzarTotal()">
+                    <div class="btn-select"><span>⬜</span> Seleccionar</div>
+                </label>
+            </div>
+        </div>
+    </div>
+        
+        </div>
+
+    <div class="sticky-checkout">
+        <div class="checkout-content">
+            <div class="total-info">
+                <p style="color:#8b949e; font-size:0.8rem">TOTAL ESTIMAT</p>
+                <span id="totalViu">0,00€</span>
+            </div>
+            <input type="email" id="userEmail" class="user-input" placeholder="El teu correu..." required>
+            <button class="btn-primary" onclick="baixarCSV()">Confirmar i Baixar CSV</button>
+        </div>
+    </div>
+
+    <script>
+        function actualitzarTotal() {
+            const marcats = document.querySelectorAll('.comp-check:checked');
+            let suma = 0;
+            marcats.forEach(check => {
+                const card = check.closest('.card-content');
+                const preuTxt = card.querySelector('.price').innerText;
+                let valor = parseFloat(preuTxt.replace('€', '').replace(/\./g, '').replace(',', '.').trim());
+                suma += valor;
+                // Canvia el text del botó
+                check.nextElementSibling.innerHTML = "<span>✅</span> Seleccionat";
+            });
+            
+            // Si es desmarca, torna al text original
+            document.querySelectorAll('.comp-check:not(:checked)').forEach(check => {
+                check.nextElementSibling.innerHTML = "<span>⬜</span> Seleccionar";
+            });
+
+            document.getElementById('totalViu').innerText = suma.toLocaleString('ca-ES', {minimumFractionDigits: 2}) + "€";
+        }
+
+        function baixarCSV() {
+            const email = document.getElementById('userEmail').value;
+            const marcats = document.querySelectorAll('.comp-check:checked');
+
+            if (!email.includes('@')) { alert("Posa un correu vàlid"); return; }
+            if (marcats.length === 0) { alert("Tria almenys un producte"); return; }
+
+            let productesNoms = "";
+            let totalSuma = document.getElementById('totalViu').innerText;
+
+            marcats.forEach(check => {
+                productesNoms += check.closest('.card-content').querySelector('h3').innerText + " + ";
+            });
+
+            // Contingut del fitxer per a LibreOffice
+            const contingut = "Data;Client;Productes;Total\n" + 
+                              new Date().toLocaleDateString() + ";" + email + ";" + productesNoms + ";" + totalSuma;
+
+            const blob = new Blob([contingut], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "comanda_didac_tech.csv";
+            link.click();
+            
+            alert("S'ha descarregat el fitxer. Obre'l amb LibreOffice Calc i marca 'Punt i coma'.");
+        }
+    </script>
+</body>
+</html>
